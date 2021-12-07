@@ -1,1 +1,1 @@
-# python 一個 line 通知每日氣溫
+# python 一個 line notify 通知每日氣溫
