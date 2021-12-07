@@ -19,11 +19,11 @@ def getData(key):
     def tempToC(fTemp):
         return round((fTemp - 32) * 5 / 9, 1)
 
-    temp = tempToC(data["main"]["temp"])
+    now_temp = tempToC(data["main"]["temp"])
     feels_like = tempToC(data["main"]["feels_like"])
     temp_max = tempToC(data["main"]["temp_max"])
     temp_min = tempToC(data["main"]["temp_min"])
-    temp = f"{data['name']} \n當前氣溫 {temp} \n體感溫度 {feels_like}\n最高溫 {temp_max}\n最低溫 {temp_min}"
+    temp = f"{data['name']} \n當前氣溫 {now_temp} \n體感溫度 {feels_like}\n最高溫 {temp_max}\n最低溫 {temp_min}"
 
     return temp
 
