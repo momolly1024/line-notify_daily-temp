@@ -42,8 +42,8 @@ def sendToLine(token):
 sendToLine(lineToken)
 
 # schedule.every().day.at("07:30").do(sendToLine(lineToken,temp))
-schedule.every(10).seconds.do(sendToLine, (lineToken))
+# schedule.every(10).seconds.do(sendToLine, (lineToken))
 
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+# while True:
+#     schedule.run_pending()
+#     time.sleep(1)
